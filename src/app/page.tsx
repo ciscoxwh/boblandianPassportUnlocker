@@ -31,7 +31,7 @@ export default function happyTime() {
       setPassportType(help);
       setBobsIncrement(1);
     } else if (theNextValue < 100) {
-      let help = "/awesomeThailandPassport.jpg";
+      let help = "/AwesomeThailandPassport.jpg";
       setPassportName("Blue Thai");
       setPassportType(help);
       setBobsIncrement(3);
