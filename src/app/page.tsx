@@ -1,6 +1,10 @@
 "use client";
+
 import { useState } from "react";
+
 import Image from "next/image";
+
+import styles from "./page.module.css";
 
 export default function happyTime() {
   const [bobs, setBobs] = useState(0); /* this makes a function, setBobs, that 
@@ -44,9 +48,10 @@ export default function happyTime() {
   };
 
   return (
-    <div>
-      <h1>Bob's Thai/Boblandian customs.</h1>
+    <div className={styles.container}>
+      <h1 className={styles.title}>Bob's Thai/Boblandian customs.</h1>
       <p>Hello. You have the {passportName} Passport.</p>
+
       {/* please excuse all the br tags I will learn margins or whatever later */}
       <br></br>
       <button onClick={bobClick}>Click ME For +{bobsIncrement} Bobs</button>
