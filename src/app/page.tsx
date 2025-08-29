@@ -49,33 +49,41 @@ export default function happyTime() {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Bob's Thai/Boblandian customs.</h1>
-      <p>Hello. You have the {passportName} Passport.</p>
-
-      {/* please excuse all the br tags I will learn margins or whatever later */}
-      <br></br>
-      <button onClick={bobClick}>Click ME For +{bobsIncrement} Bobs</button>
-      <br></br>
-      <br></br>
-      <p>You Have {bobs} Bobs, Bro.</p>
-      <br></br>
-      <Image src={passportType} width={100} height={100} alt="{passportType}" />
-      <br></br>
-      <br></br>
-      <p>With 10 Bobs, you have the cool Blue Thailand passport.</p>
-      <p>
-        With 100 Bobs, you have the Boblandian passport (very powerful you can
-        travel anywhere)
-      </p>
-      <br></br>
-      <p>
-        Bob Sez: When you have the Blue Thailand passport, you get 3 bobs per
-        press instead.
-      </p>
-      <p>
-        Additionally, Bob Sez: When you have the Boblandian passport, you get 1e
-        <sup>10</sup> bobs per press instead.
-      </p>
+      <div className={styles.headerText}>
+        <p className={styles.title}>boblandian passport unlocker</p>
+        <p>Hello. You have the {passportName} Passport.</p>
+      </div>
+      <div>
+        {/* please excuse all the br tags I will learn margins or whatever later */}
+        <button onClick={bobClick}>Click ME For +{bobsIncrement} Bobs</button>
+        <br></br>
+        <br></br>
+        <p>You Have {bobs} Bobs, Bro.</p>
+        <br></br>
+        <Image
+          src={passportType}
+          width={100}
+          height={100}
+          alt="{passportType}"
+        />
+      </div>
+      <div>
+        <p>With 10 Bobs, you have the cool Blue Thailand passport.</p>
+        <p>
+          With 100 Bobs, you have the Boblandian passport (very powerful you can
+          travel anywhere)
+        </p>
+        <br></br>
+        <p>
+          Bob Sez: When you have the Blue Thailand passport, you get 3 bobs per
+          press instead.
+        </p>
+        <p>
+          Additionally, Bob Sez: When you have the Boblandian passport, you get
+          1e
+          <sup>10</sup> bobs per press instead.
+        </p>
+      </div>
     </div>
   );
 }
